@@ -1,0 +1,7 @@
+# explicitly block everything.
+*
+# expclicitly unblock a handful of things.
+!.gitignore
+!**/run
+!EADME.md
+
