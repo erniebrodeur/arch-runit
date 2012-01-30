@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec chpst -P -u chef:users chef-server -N -e production 2>&1 
