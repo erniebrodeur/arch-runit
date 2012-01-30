@@ -1,3 +1,5 @@
 #!/bin/sh
 
-exec chpst -P -u chef:users chef-server -N -e production 2>&1 
+# todo: wire some of this in, this is just for the pid.
+HOME_CHEF=/home/chef
+exec chpst -P -u chef:users chef-server -P $HOME_CHEF/chef-server.pid -N -e production 2>&1 
