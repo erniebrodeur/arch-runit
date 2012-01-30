@@ -1,0 +1,5 @@
+#!/bin/sh
+declare -x J2SDKDIR="/opt/java"
+declare -x JAVA_HOME="/opt/java"
+PATH=/opt/java/bin:$PATH
+exec chpst -P -u chef:users chef-solr 2>&1 

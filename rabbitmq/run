@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec chpst -u root:root /usr/sbin/rabbitmq-server 2>&1 
+

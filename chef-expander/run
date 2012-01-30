@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec chpst -u chef:users chef-expander -n1 2>&1 
+
